@@ -7,6 +7,7 @@ import 'package:flutterders1/screens/home.dart';
 import 'package:flutterders1/screens/product/product.dart';
 import 'package:flutterders1/screens/product/search.dart';
 import 'package:flutterders1/screens/static/about.dart';
+import 'package:flutterders1/screens/static/boarding.dart';
 import 'package:go_router/go_router.dart';
 
 // GoRouter configuration
@@ -16,6 +17,10 @@ final routes = GoRouter(
     GoRoute(
       path: '/',
       builder: (context, state) => const loaderScreen(),
+    ),
+    GoRoute(
+      path: '/boarding',
+      builder: (context, state) => const boardingScreen(),
     ),
     GoRoute(
       path: '/home',
