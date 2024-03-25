@@ -1,6 +1,7 @@
 import 'package:flutterders1/screens/client/login.dart';
 import 'package:flutterders1/screens/client/profile.dart';
 import 'package:flutterders1/screens/client/register.dart';
+import 'package:flutterders1/screens/core/error.dart';
 import 'package:flutterders1/screens/home.dart';
 import 'package:flutterders1/screens/product/product.dart';
 import 'package:flutterders1/screens/product/search.dart';
@@ -9,6 +10,7 @@ import 'package:go_router/go_router.dart';
 
 // GoRouter configuration
 final routes = GoRouter(
+  errorBuilder: (context, state) => const errorScreen(),
   routes: [
     GoRoute(
       path: '/',
