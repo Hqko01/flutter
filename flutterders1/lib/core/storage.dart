@@ -18,4 +18,24 @@ class Storage {
 
     await storage.setBool("runned", true);
   }
+
+  setConfig({String? language, bool? darkMode}) async {
+    final SharedPreferences storage = await SharedPreferences.getInstance();
+
+    if (language != null) {
+      await storage.setString("language", language);
+    }
+
+    if (darkMode != null) {
+      await storage.setBool("darkMode", darkMode);
+    }
+  }
+
+  getConfig() async {
+    final SharedPreferences storage = await SharedPreferences.getInstance();
+    return {
+      "darkmode": storage.getBool("darkMode"),
+      "language": storage.getString("language"),
+    };
+  }
 }
