@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/vize_proje.iml" filepath="$PROJECT_DIR$/vize_proje.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/vize_proje_android.iml" filepath="$PROJECT_DIR$/android/vize_proje_android.iml" />
-    </modules>
-  </component>
-</project>
